@@ -163,7 +163,4 @@ This project is open-source and distributed under the Apache License.
 
 **Hesham Elhaddad**  
 📧 Email: h.elhaddad@wmich.edu  
-🌐 GitHub: [Hesham's GitHub](https://github.com/yourusername)  
 =======
-
->>>>>>> 4787b84d5778840cf7964835422832006f90a4b3
