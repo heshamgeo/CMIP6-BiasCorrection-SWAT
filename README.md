@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bias-Corrected CMIP6 Climate Data Processing for SWAT Modeling
 
 This repository provides a streamlined workflow for downloading, processing, and analyzing CMIP6 climate data for hydrological modeling using the Soil and Water Assessment Tool (SWAT). The workflow includes bias correction via Quantile Mapping and prepares SWAT-compatible climate inputs, followed by an extreme event analysis of projected streamflow.
@@ -163,3 +164,6 @@ This project is open-source and distributed under the Apache License.
 **Hesham Elhaddad**  
 📧 Email: h.elhaddad@wmich.edu  
 🌐 GitHub: [Hesham's GitHub](https://github.com/yourusername)  
+=======
+
+>>>>>>> 4787b84d5778840cf7964835422832006f90a4b3
