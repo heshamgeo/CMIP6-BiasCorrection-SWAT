@@ -160,6 +160,6 @@ This project is open-source and distributed under the Apache License.
 
 #### 👨‍💻 Author & Contact
 
-**Hesham Elhaddad**  
-📧 Email: h.elhaddad@wmich.edu  
+- Hesham Elhaddad
+- 📧 Email: h.elhaddad@wmich.edu  
 =======
