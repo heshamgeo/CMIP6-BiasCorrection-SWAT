@@ -158,7 +158,7 @@ This project is open-source and distributed under the Apache License.
 
 ---
 
-## 👨‍💻 Author & Contact
+#### 👨‍💻 Author & Contact
 
 **Hesham Elhaddad**  
 📧 Email: h.elhaddad@wmich.edu  
