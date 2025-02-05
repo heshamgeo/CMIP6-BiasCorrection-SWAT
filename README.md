@@ -111,7 +111,7 @@ D:/CMIP6-BiasCorrection-SWAT/workingfolder/Results_Plots/
 ### Step 1: Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/CMIP6-SWAT-Processing.git
+git clone https://github.com/heshamgeo/CMIP6-BiasCorrection-SWAT.git
 cd CMIP6-SWAT-Processing
 ```
 
