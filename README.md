@@ -151,15 +151,42 @@ The following Python libraries are required:
 Ensure they are installed before running the notebooks.
 
 ---
+#### **Setting Up R and rpy2 for Extreme Events (L-Moments) Analysis**
+##### **Requirements**
+- **R (version 4.4.1 recommended)**
+- **Python package `rpy2`**
+- **R package `lmom`**
 
-## 📚 License
+#### **Installation & Setup**
+1. **Install `rpy2` in Python**  
+   ```bash
+   pip install --no-cache-dir rpy2
+
+2. **Set R Environment in Python**  
+Before running L-Moments calculations, configure the **R environment variables** to ensure Python can access the correct R installation.
+
+  ```python
+  import os
+  os.environ['R_HOME'] = "C:/Program Files/R/R-4.4.1"  # Adjust path if needed
+  os.environ['R_USER'] = "C:/Users/YourUsername/Documents/R/win-library/4.4"
+
+```
+3. **Install lmom in R**  
+The lmom package is required for L-Moments calculations. Install it in R using the following command:
+  ```r
+  install.packages("lmom", dependencies=TRUE)
+  installed.packages()["lmom", ]
+```
+---
+
+#### License
 
 This project is open-source and distributed under the Apache License.
 
 ---
 
-#### 👨‍💻 Author & Contact
+#### Author & Contact
 
 - Hesham Elhaddad
-- 📧 Email: h.elhaddad@wmich.edu  
+- Email: h.elhaddad@wmich.edu  
 =======
