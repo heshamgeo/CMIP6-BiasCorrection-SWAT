@@ -14,30 +14,30 @@ This project follows a structured pipeline using four Jupyter notebooks:
 
 ---
 
-## 1️⃣ Download and Clip CMIP6 Data
+## 1️. Download and Clip CMIP6 Data
 
-📌 **Notebook:** `Download_clip_CMIP6.ipynb`  
-🔹 **Purpose:** Automatically downloads daily climate data from the NASA Earth Exchange (NEX) GDDP-CMIP6 dataset and clips it to the study area using a shapefile.
+ **Notebook:** `Download_clip_CMIP6.ipynb`  
+ **Purpose:** Automatically downloads daily climate data from the NASA Earth Exchange (NEX) GDDP-CMIP6 dataset and clips it to the study area using a shapefile.
 
-✅ **Key Features:**
+ **Key Features:**
 - Retrieves CMIP6 daily data (e.g., precipitation, temperature, humidity, wind speed, radiation).
 - Supports multiple models and scenarios (e.g., ssp245, ssp585).
 - Clips data to the study region.
 - Organizes downloaded files by model, scenario, and parameter.
 
-📂 **Output Directory:**
+ **Output Directory:**
 ```
 D:/CMIP6-BiasCorrection-SWAT/workingfolder/clipped_data/
 ```
 
 ---
 
-## 2️⃣ Preprocessing (Standardization)
+## 2️. Preprocessing (Standardization)
 
-📌 **Notebook:** `Preprocessing.ipynb`  
-🔹 **Purpose:** Ensures all NetCDF files have consistent time formatting and unit conversions.
+ **Notebook:** `Preprocessing.ipynb`  
+ **Purpose:** Ensures all NetCDF files have consistent time formatting and unit conversions.
 
-✅ **Key Features:**
+ **Key Features:**
 - Standardizes time formats across CMIP6 datasets.
 - Converts units to SWAT-compatible formats:
   - Precipitation (kg/m²/s → mm/day)
@@ -46,60 +46,60 @@ D:/CMIP6-BiasCorrection-SWAT/workingfolder/clipped_data/
   - Solar Radiation (W/m² → MJ/m²/day)
 - Saves preprocessed NetCDF files.
 
-📂 **Output Directory:**
+ **Output Directory:**
 ```
 D:/CMIP6-BiasCorrection-SWAT/workingfolder/standardized_data/
 ```
 
 ---
 
-## 3️⃣ Bias Correction using Quantile Mapping
+## 3️. Bias Correction using Quantile Mapping
 
-📌 **Notebook:** `Quantile_mapping.ipynb`  
-🔹 **Purpose:** Applies Quantile Mapping (QM) to correct biases in CMIP6 precipitation data.
+ **Notebook:** `Quantile_mapping.ipynb`  
+ **Purpose:** Applies Quantile Mapping (QM) to correct biases in CMIP6 precipitation data.
 
-✅ **Key Features:**
+ **Key Features:**
 - Uses observed CHIRPS precipitation data for bias correction.
 - Computes empirical quantiles from observed and historical model data (2015-2024).
 - Applies quantile mapping correction to future projections (2025-2100).
 - Saves bias-corrected NetCDF files for each model and scenario.
 
-📂 **Output Directory:**
+ **Output Directory:**
 ```
 D:/CMIP6-BiasCorrection-SWAT/workingfolder/bias_corrected/
 ```
 
 ---
 
-## 4️⃣ SWAT Climate Input Formatting
+## 4️. SWAT Climate Input Formatting
 
-📌 **Notebook:** `SWAT_inputs_Format.ipynb`  
-🔹 **Purpose:** Converts bias-corrected CMIP6 data into SWAT input format.
+ **Notebook:** `SWAT_inputs_Format.ipynb`  
+ **Purpose:** Converts bias-corrected CMIP6 data into SWAT input format.
 
-✅ **Key Features:**
+ **Key Features:**
 - Extracts climate data for each SWAT weather station from a centroid shapefile.
 - Generates daily SWAT input files (`pcp.txt`, `tmp.txt`, `rh.txt`, etc.).
 - Ensures consistent formatting required by SWAT.
 
-📂 **Output Directory:**
+ **Output Directory:**
 ```
 D:/CMIP6-BiasCorrection-SWAT/workingfolder/SWAT_INPUT/
 ```
 
 ---
 
-## 5️⃣ Extreme Event Analysis
+## 5️. Extreme Event Analysis
 
-📌 **Notebook:** `Extreme_event_analysis.ipynb`  
-🔹 **Purpose:** Analyzes annual maximum streamflow series (AMS) and estimates return periods.
+ **Notebook:** `Extreme_event_analysis.ipynb`  
+ **Purpose:** Analyzes annual maximum streamflow series (AMS) and estimates return periods.
 
-✅ **Key Features:**
+ **Key Features:**
 - Extracts annual maximum monthly streamflow from SWAT.
 - Fits extreme value distributions (GEV, Gumbel, Pearson-III).
 - Uses bootstrap resampling (1000 iterations) for uncertainty estimation.
 - Generates return period curves comparing historical and future precipitation extremes.
 
-📂 **Output Directory:**
+ **Output Directory:**
 ```
 D:/CMIP6-BiasCorrection-SWAT/workingfolder/Results_Plots/
 ```
@@ -135,7 +135,7 @@ Execute the notebooks in order:
 
 ---
 
-## 🛠 Dependencies
+##  Dependencies
 
 The following Python libraries are required:
 
